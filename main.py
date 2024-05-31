@@ -8,4 +8,7 @@ def hola():
 @app.route("/chau")
 def goodbye():
     return "chau"
+@app.route('/saludo/<nombre>')
+def saludar(nombre):
+    return f'Hola {nombre}'
 app.run()
